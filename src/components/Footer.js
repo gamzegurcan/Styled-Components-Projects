@@ -1,11 +1,13 @@
-import {Container} from './styles/ContainerStyled';
-import {Flex} from './styles/FlexStyled';
+import SocialIcons from './SocialIcons'
+import { Container } from './styles/ContainerStyled'
+import { Flex } from './styles/FlexStyled'
+import { StyledFooter } from './styles/FooterStyled'
 
-function Footer(){
-  return(
-    <div>
+export default function Footer() {
+  return (
+    <StyledFooter>
       <Container>
-        <img src="./images/logo_white.svg" alt="..." />
+        <img src='./images/logo_white.svg' alt='' />
         <Flex>
           <ul>
             <li>
@@ -20,16 +22,18 @@ function Footer(){
             <li>What We Do</li>
             <li>FAQ</li>
           </ul>
+
           <ul>
             <li>Career</li>
             <li>Blog</li>
             <li>Contact Us</li>
           </ul>
+
+          <SocialIcons />
         </Flex>
+
         <p>&copy; 2021 Huddle. All rights reserved</p>
       </Container>
-    </div>
-  );
+    </StyledFooter>
+  )
 }
-
-export default Footer;
